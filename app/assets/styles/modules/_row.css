@@ -1,0 +1,99 @@
+.row {
+  @mixin clearfix {
+  }
+  &--t-padding {
+    padding-top: 80px;
+  }
+  &--gutters > div {
+    padding-right: 65px;
+    box-sizing: border-box; /*padding ni 100% dotoroo bagtaj ywna*/
+  }
+  &--gutters {
+    margin-right: -65px;
+  }
+  &--gutters-small > div {
+    padding-right: 45px;
+    box-sizing: border-box; /*padding ni 100% dotoroo bagtaj ywna*/
+  }
+  &--gutters-small {
+    margin-right: -45px;
+  }
+
+  &--gutters-large > div {
+    padding-right: 120px;
+    box-sizing: border-box; /*padding ni 100% dotoroo bagtaj ywna*/
+  }
+  &--gutters-large {
+    margin-right: -120px;
+  }
+
+  @mixin atMedium {
+    &__medium-4 {
+      float: left;
+      width: 33.33%;
+      &--larger {
+        width: 40%;
+      }
+      &--image-fill {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+
+    &__medium-8 {
+      float: left;
+      width: 66.66%;
+      &--smaller {
+        width: 60%;
+      }
+    }
+  }
+  @mixin atLarge {
+    &__large-4 {
+      float: left;
+      width: 33.33%;
+      &--larger {
+        width: 40%;
+      }
+      &--image-fill {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+
+    &__large-8 {
+      float: left;
+      width: 66.66%;
+      &--smaller {
+        width: 60%;
+      }
+    }
+  }
+  /* ijil undurtei block style*/
+  &--ewual-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+  &--ewual-height-at-large {
+    @mixin atLarge {
+      display: flex;
+    }
+    & > div {
+      float: none;
+      display: flex;
+    }
+  }
+}
