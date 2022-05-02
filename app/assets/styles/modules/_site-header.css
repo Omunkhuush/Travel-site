@@ -92,6 +92,8 @@
     z-index: -1;
 
     @mixin atMedium {
+      opacity: 1;
+      transform: scale(1);
       display: block;
       z-index: 1;
       padding-top: 0;
