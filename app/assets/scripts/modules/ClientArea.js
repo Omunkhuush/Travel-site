@@ -32,7 +32,7 @@ class ClientArea {
     document.body.insertAdjacentHTML(
       "beforeend",
       `
-      <div class=".client-area">
+      <div class="client-area">
       <div class="wrapper wrapper--medium">
         <h2 class="section-title section-title--blue">Хэрэглэгчийн тугай хуудас</h2>
         <form action="" class="client-area__form">

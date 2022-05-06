@@ -1,8 +1,7 @@
 .client-area {
-  padding: 40px;
+  padding: 50px;
   &__form {
     display: flex;
-    padding-bottom: 60px;
   }
   &__input {
     flex: 1;
