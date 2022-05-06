@@ -3,11 +3,15 @@ import "lazysizes";
 import MobileMenu from "./modules/mobile-menu";
 import RevealOnScroll from "./modules/RevealOnScroll";
 import StickyHeader from "./modules/StickyHeader";
+import ClientArea from "./modules/ClientArea";
 //import Modal from "./modules/modal";
 
 if (module.hot) {
   module.hot.accept();
 }
+//------------------------------------//
+new ClientArea();
+
 let mobileMenu = new MobileMenu();
 // -------- reveal scroll ------//
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 85);
