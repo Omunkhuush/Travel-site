@@ -1,7 +1,7 @@
 exports.handler = function (event, context, callback) {
   const secretContent = `
-    <h3> cxereglegchiin tusgai xuudsand tawtai moril</h3>
-    <p> zowxon bvrtgelttei xereglegchid <strong>zoriulaw</strong></p>
+    <h3> Хэрэглэгчийн тусгай хэсэг</h3>
+    <p> Зөвхөн бүртгэлтэй хэрэглэчидэд <strong>зориулсан контент</strong></p>
     `;
   let body;
   if (event.body) {
